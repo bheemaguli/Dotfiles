@@ -20,7 +20,7 @@ git clone https://github.com/MichaelAquilina/zsh-you-should-use.git $ZSH_CUSTOM/
 ### 3. My prefered oh-my-zsh theme is *eastwood*. Install this theme by
 
 ```bash
-sudo vim .zshrc
+sudo vim ~/.zshrc
 ```
 and changing theme as 
 
@@ -30,7 +30,7 @@ ZSH_THEME="eastwood"
 
 ### 4. Update plugins by 
 ```bash
-sudo vim .zshrc
+sudo vim ~/.zshrc
 ```
 
 and update plugins to 
@@ -44,3 +44,4 @@ plugins=(
 )
 ```
 
+Save and close vim by ESC -> :wq
