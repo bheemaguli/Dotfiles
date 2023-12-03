@@ -17,6 +17,13 @@ git clone https://github.com/MichaelAquilina/zsh-you-should-use.git $ZSH_CUSTOM/
 
 ```
 
+If ``raw.githubusercontent.com`` is blocked, add below to allowed hosts
+
+```bash
+sudo echo "185.199.108.133 raw.githubusercontent.com" >> /etc/hosts
+
+```
+
 ### 3. My prefered oh-my-zsh theme is *eastwood*. Install this theme by
 
 ```bash
