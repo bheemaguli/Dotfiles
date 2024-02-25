@@ -74,7 +74,6 @@ plugins=(
 	git 
 	zsh-syntax-highlighting
 	zsh-autosuggestions
-	auto-notify $plugins
 	you-should-use $plugins
 )
 
@@ -106,6 +105,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+
+# export PATH="/opt/miniconda3/bin:$PATH"  # commented out by conda initialize
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -121,4 +123,15 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-export PATH="$HOME/.emacs.d/bin:$PATH"
+export PATH="$HOME/nvim-linux64/bin:$PATH"
+# alias vim=nvim
+source /usr/share/nvm/init-nvm.sh
+
+
+# pnpm
+export PNPM_HOME="/home/sumanthk/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
