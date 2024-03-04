@@ -9,8 +9,13 @@ if true then return {} end
 -- * disable/enabled LazyVim plugins
 -- * override the configuration of LazyVim plugins
 return {
-  -- add gruvbox
-  { "ellisonleao/gruvbox.nvim" },
+  -- add tokyonight
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  },
 
   -- Configure LazyVim to load gruvbox
   {
@@ -206,7 +211,6 @@ return {
         "stylua",
         "shellcheck",
         "shfmt",
-        "flake8",
       },
     },
   },
