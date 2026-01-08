@@ -52,3 +52,55 @@ plugins=(
 ```
 
 Save and close vim by ESC -> :wq
+
+
+TODO:
+0. Update to omarchy
+1. Add background
+2. Handle multi-monitor with external as main
+```sh
+monitor = HDMI-A-1, 1920x1080@60, auto, 1
+monitor = eDP-1, 1920x1080@60, auto, 1.33
+```
+3. Update workspace switching
+```sh
+# Tiling workspaces
+workspace= 1, monitor:HDMI-A-1, default:true
+workspace= 2, monitor:eDP-1, default:true
+workspace= 3, monitor:HDMI-A-1, default:true
+workspace= 4, monitor:eDP-1, default:true
+workspace= 5, monitor:HDMI-A-1, default:true
+workspace= 6, monitor:eDP-1, default:true
+workspace= 7, monitor:HDMI-A-1, default:true
+workspace= 8, monitor:eDP-1, default:true
+workspace= 9, monitor:HDMI-A-1, default:true
+workspace= 10, monitor:eDP-1, default:true
+workspace= 11, monitor:HDMI-A-1, default:true
+
+bindd = SUPER, code:10, Switch to workspace 1, workspace, 1
+bindd = SUPER, code:11, Switch to workspace 2, workspace, 2
+bindd = SUPER, code:12, Switch to workspace 3, workspace, 3
+bindd = SUPER, code:13, Switch to workspace 4, workspace, 4
+bindd = SUPER, code:14, Switch to workspace 5, workspace, 5
+bindd = SUPER, code:15, Switch to workspace 6, workspace, 6
+bindd = SUPER, code:16, Switch to workspace 7, workspace, 7
+bindd = SUPER, code:17, Switch to workspace 8, workspace, 8
+bindd = SUPER, code:18, Switch to workspace 9, workspace, 9
+bindd = SUPER, code:19, Switch to workspace 10, workspace, 10
+bindd = SUPER, code:20, Switch to workspace 11, workspace, 11
+```
+4. Waybar
+```
+    "persistent-workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": [],
+      "6": [],
+      "7": [],
+      "8": [],
+      "9": [],
+      "10: []
+    }
+```
