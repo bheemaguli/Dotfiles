@@ -59,8 +59,8 @@ TODO:
 1. Add background
 2. Handle multi-monitor with external as main
 ```sh
-monitor = HDMI-A-1, 1920x1080@60, auto, 1
-monitor = eDP-1, 1920x1080@60, auto, 1.33
+monitor = eDP-1, 1920x1080@60, 1920x0, 1.33
+monitor = HDMI-A-1, 1920x1080@60, 0x0, 1
 ```
 3. Update workspace switching
 ```sh
